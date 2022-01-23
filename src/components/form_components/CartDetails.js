@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Toggle from "../Toggle";
-import PiImg from '../../assets/images/Raspberry_Pi.png';
+import PiImg from "../../assets/images/Raspberry_Pi.png";
 
 export default class CartDetails extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class CartDetails extends Component {
     this.state = {
       itemCount: 1,
       subTotal: 40,
-      falseShipping: true
+      falseShipping: true,
     };
   }
 
@@ -33,17 +33,16 @@ export default class CartDetails extends Component {
                   <Row>
                     <Col xs="9">
                       <div className="media">
-                      <div className="media-body">
-                        <img
-                          src={PiImg}
-                          className="img-fluid mr-3"
-                          alt="raspberry pi"
-                        />
+                        <div className="media-body">
+                          <img
+                            src={PiImg}
+                            className="img-fluid mr-3"
+                            alt="raspberry pi"
+                          />
                         </div>
-                          <h5 className="mt-0">
-                            Raspberry Pi 3 Model B Motherboard
-                          </h5>
-                        
+                        <h5 className="mt-0">
+                          Raspberry Pi 3 Model B Motherboard
+                        </h5>
                       </div>
                       <div className="media-count">
                         <p>1</p>
@@ -100,7 +99,12 @@ export default class CartDetails extends Component {
             <a href="/">90 Day Returns</a>
           </div>
         </Container>
-        <Button className="mt-4" color="primary" block>
+        <Button
+          className="mt-4"
+          color="primary"
+          href="https://buy.stripe.com/test_dR69Ej74u7gc4126oo"
+          block
+        >
           COMPLETE ORDER
         </Button>
       </Container>
