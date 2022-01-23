@@ -16,7 +16,7 @@ Output: build folder
 
 > gh-pages
 
-update homepage in package.json
+update homepage in `package.json`
 
     npm deploy
 
