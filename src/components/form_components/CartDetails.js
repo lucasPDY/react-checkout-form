@@ -2,24 +2,22 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Toggle from "../Toggle";
 import PiImg from '../../assets/images/Raspberry_Pi.png';
-import PiLcdImg from '../../assets/images/Raspberry_Pi_LCD.png';
 
 export default class CartDetails extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      itemCount: 2,
-      subTotal: 111.42,
-      taxes: 9.14,
+      itemCount: 1,
+      subTotal: 40,
       falseShipping: true
     };
   }
 
   render() {
-    const { itemCount, subTotal, taxes } = this.state;
+    const { itemCount, subTotal } = this.state;
     const shippingTotal = Number(this.props.data);
-    const orderTotal = subTotal + shippingTotal + taxes;
+    const orderTotal = subTotal + shippingTotal;
 
     return (
       <Container className="cart-details-container">
@@ -57,31 +55,6 @@ export default class CartDetails extends Component {
                       </div>
                     </Col>
                   </Row>
-
-                  <Row>
-                    <Col xs="9">
-                      <div className="media">
-					  <div className="media-body">
-                        <img
-                          src={PiLcdImg}
-                          className="img-fluid mr-3"
-                          alt="pi lcd"
-                        />
-                        </div>
-                          <h5 className="mt-0">
-                            Raspberry Pi 7" Touchscreen Display
-                          </h5>
-                      </div>
-                      <div className="media-count">
-                        <p>1</p>
-                      </div>
-                    </Col>
-                    <Col xs="3">
-                      <div className="conatiner-fluid">
-                        <h6>$72.92</h6>
-                      </div>
-                    </Col>
-                  </Row>
                 </Container>
               )}
             </div>
@@ -108,14 +81,6 @@ export default class CartDetails extends Component {
                   <span>--</span>
                 )}
               </h6>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs="9">
-              <h6>Taxes:</h6>
-            </Col>
-            <Col xs="3">
-              <h6>${taxes}</h6>
             </Col>
           </Row>
           <Row>
