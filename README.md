@@ -1,6 +1,6 @@
 # React Checkout Form
 **Project Description**
-This project was made to practice forms, toggle effects and UX design in React. Live Link: [React Checkout Form](https://3daddict.github.io/react-checkout-form/).
+This project was made to practice forms, toggle effects and UX design in React. Live Link: [React Checkout Form](https://lucaspdy.github.io/react-checkout-form/).
 
 **Available Scripts**
 
