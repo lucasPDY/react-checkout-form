@@ -6,19 +6,19 @@ This project was made to practice forms, toggle effects and UX design in React. 
 
 > For development
 
-    yarn start
+    npm run start
 Browser will open to http://localhost:3000/
 
 > For production
 
-    yarn build
+    npm run build
 Output: build folder
 
 > gh-pages
 
 update homepage in package.json
 
-    yarn deploy
+    npm deploy
 
 ## Feature List
   * SPA eCommerce Checkout Form
